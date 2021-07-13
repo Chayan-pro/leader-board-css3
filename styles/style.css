@@ -10,9 +10,9 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-
 .container {
     background-color: #fff;
     width: 870px;
@@ -20,6 +20,7 @@ main {
 }
 hr{
     border: 1px solid #D1D1D1;
+    margin-bottom: 22px;
 
 }
 
@@ -58,6 +59,11 @@ hr{
 /*---------
 Top Blogs style
 -----------*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+}
 .blog{
     display: flex;
 }
@@ -67,4 +73,21 @@ Top Blogs style
 }
 .blog-info{
     margin-left: 16px;
+}
+.blog-tittle{
+    color: #000000;
+    font-weight: 500;
+    margin: 0;
+    width: 168px;
+}
+.blog-author{
+    color: #9F9F9F;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 6px;
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #8B6FFF;
 }
