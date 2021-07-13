@@ -17,6 +17,8 @@ main {
     background-color: #fff;
     width: 870px;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 hr{
     border: 1px solid #D1D1D1;
@@ -90,4 +92,46 @@ Top Blogs style
     text-decoration: none;
     font-size: 16px;
     color: #8B6FFF;
+}
+/* Courses style */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
+.course{
+    width: 252px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 7%;
+}
+.course .course-banner img{
+    height: 104px;
+    width: 98%;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #ffc014;
+}
+.fa-star.empty{
+    color: #aeaeae;
+    opacity: 0.7;
+}
+.course-duration{
+    height: 30px;
+    width: 95px;
+    background-color: #FFE4E8;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+}
+.course-duration .fa-clock, .time {
+    color: #FF4A60;
 }
